@@ -1,0 +1,8 @@
+<% if session[:user_id].present? %>
+  $('.sign-in-links').empty();
+  $('#new').empty();
+  <%= render :partial => 'display' %>
+<% else %>
+  $('#new').empty();
+  $('#new').append('<%=j render :partial => 'form' %>');
+<% end %>

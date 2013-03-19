@@ -1,0 +1,9 @@
+.row
+  .large-8.columns.large-centered
+    = form_tag( login_path, :remote => true ) do
+      = label_tag 'Username'
+      = text_field_tag 'username'
+      = label_tag 'Password'
+      = password_field_tag 'password'
+      = submit_tag "Go Flirt", :class => 'button success'
+      = link_to('Cancel', '#', :'data-clear-form' => true, :class => 'button right')
