@@ -1,4 +1,7 @@
 .row
-  .large-12.columns
+  .large-6.columns
     %h1 Welcome to <span>phtlbm</span>!
+    = link_to("New Album", new_album_path, :remote => true)
     #new
+  .large-6.columns.albums
+    = render partial: 'albums/index'

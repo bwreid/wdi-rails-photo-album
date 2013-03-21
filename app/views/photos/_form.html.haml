@@ -1,0 +1,12 @@
+.row
+  .large-6.columns.large-centered
+    = form_for @photo, :html => {:multipart => true}, :remote => true do |f|
+      // ADD MULTIPART WHEN YOU'RE ADDING ANY KIND OF FILE
+      = f.label :name
+      = f.text_field :name
+      = f.label :url
+      = f.file_field :url
+      = f.text_field :remote_url_url # THIS SYNTAX IS IMPORTANT
+      = hidden_field_tag :album_id, params[:album_id]
+      = f.submit
+      = link_to('Cancel', '#', remote: true, :'data-clear-form' => true)

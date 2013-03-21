@@ -12,4 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.remotipart
+//= require 'welcome.js'
+//= require 'js/jquery-ui-1.10.2.custom.min'
 //= require foundation

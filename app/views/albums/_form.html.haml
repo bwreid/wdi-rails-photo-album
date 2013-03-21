@@ -1,0 +1,7 @@
+.row
+  .large-6.columns.large-centered
+    = form_for @album, :remote => true do |f|
+      = f.label :name
+      = f.text_field :name
+      = f.submit
+      = link_to('Cancel', '#', remote: true, :'data-clear-form' => true)

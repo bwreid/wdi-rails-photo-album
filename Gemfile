@@ -7,6 +7,12 @@ gem 'pg'
 gem 'haml'
 gem 'activerecord'
 gem 'bcrypt-ruby'
+gem 'remotipart' # THIS ALLOWS YOU TO UPLOAD FILES VIA AJAX
+
+# FOR USING AMAZON WEB SERVICES
+gem 'carrierwave' # CONNECTS TO WEB SERVICE
+gem 'fog'
+gem 'rmagick' # DOES IMAGE MANIPULATION IN SOFTWARE
 
 group :assets do
   gem 'sass-rails'

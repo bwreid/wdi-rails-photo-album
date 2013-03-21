@@ -1,0 +1,5 @@
+- if Album.all.count > 0
+  - Album.order(:name).each do |album|
+    %p.album
+      = link_to(album.name, album)
+      = album.photos.count

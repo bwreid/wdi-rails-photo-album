@@ -1,0 +1,11 @@
+.row
+  .large-12.columns
+    %h3= "#{@album.name} Album"
+    .row
+      .large-4.columns.large-centered{ :style => 'text-align:center;' }
+        = link_to("New Photo", new_photo_path(:album_id => params[:id]), remote: true, :class => 'button secondary')
+        #slider{ :'data-album-id' => @album.id }
+
+    #photo-form
+    .photos
+      = render partial: 'photos/index'

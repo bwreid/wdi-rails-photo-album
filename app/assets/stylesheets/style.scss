@@ -11,3 +11,19 @@ h1, h2, h3, h4, h5, h6 {
     color: $success-color;
   }
 }
+
+.photos {
+  ul {
+    list-style: none;
+    margin: 20px 0;
+    li {
+      display: inline-block;
+      margin: 0 10px;
+      img {
+        opacity: 0.7;
+        -webkit-transition: all 0.5s linear;
+        &:hover { opacity: 1; }
+      }
+    }
+  }
+}
